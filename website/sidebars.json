@@ -1,0 +1,11 @@
+{
+	"docs": {
+		"Getting Started": [
+			"intro",
+			"install"
+		],
+		"Mapeo Ecosystem": [
+			"mapeo-ecosystem"
+		]
+	}
+}
