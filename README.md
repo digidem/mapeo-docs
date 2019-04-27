@@ -13,4 +13,12 @@ Docs site for [Mapeo](https://mapeo.world/)
 
 ### Deployment
 
-We're working on it!
+To install the dependencies and build the website
+```
+./build.sh
+```
+
+This puts the static website at `website/build/mapeo-docs`, which can be served
+with any standard http server.
+
+
