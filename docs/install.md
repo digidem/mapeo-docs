@@ -1,7 +1,7 @@
 ---
 id: install
 title: Installing Mapeo 
-sidebar_label: Install Mapeo
+sidebar_label: Installation
 ---
 
 ## Install on Android (beta)
