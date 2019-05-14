@@ -1,13 +1,13 @@
 {
-	"docs": {
-		"Getting Started": [
-			"intro",
-			"install",
+  "docs": {
+    "Getting Started": [
+      "intro",
+      "install",
       "offline-tiles",
       "configuration"
-		],
-		"For Developers": [
-			"mapeo-ecosystem"
-		]
-	}
+    ],
+    "For Developers": [
+      "mapeo-ecosystem"
+    ]
+  }
 }
