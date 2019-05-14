@@ -15,7 +15,7 @@ These instructions were written with
 [POSIX](https://en.wikipedia.org/wiki/POSIX) systems in mind (Linux, macOS).
 Windows users may have to infer some of the differences in the commands shown.
 
-#### Automatic Import
+### Automatic Import
 
 Mapeo has a built-in tile importer. Go to `File->Import Offline Map Tiles...` and
 point Mapeo to the tiles you want to use. It accepts a directory of tiles
@@ -31,9 +31,23 @@ welcome](https://github.com/digidem/mapeo-desktop/issues/103).
 
 ![import.png](../../img/import.png)
 
-#### Manual Import
+### Background imagery layers menu
 
-You can also put file into the following directory:
+Once you've imported your tiles, in the Map Editor, press 'b' to open the
+imagery layers menu. Choose 'Custom' from the bottom list.  If you used
+automatic import, you can use the default setting. You can modify the paramters
+based upon your setup.
+
+Mapeo runs its own maptile server in the background. The server for tile data that is imported from the `File->Import Offline Map Tiles...` should be:
+
+```
+http://localhost:5000/styles/default/tiles/{zoom}/{x}/{y}
+```
+
+
+### Manual Import
+
+You can also put styles and tiles into the following directory:
 
 ```
 USERDATA/Mapeo/styles/default
@@ -56,17 +70,6 @@ tiles/
   ...maybe more
 ```
 
-#### Background imagery layers menu
-
-In the Map Editor, press 'b' to open the imagery layers menu. Choose 'Custom'
-from the bottom list.  If you used automatic import, you can use the default
-setting. You can modify the paramters based upon your setup.
-
-Mapeo runs its own maptile server in the background. The server for tile data that is imported from the `File->Import Offline Map Tiles...` should be:
-
-```
-http://localhost:5005/styles/default/tiles/{zoom}/{x}/{y}
-```
 
 ### Download the Tile Data
 
