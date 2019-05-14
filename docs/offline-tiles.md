@@ -16,16 +16,16 @@ These instructions were written with
 Windows users may have to infer some of the differences in the commands shown.
 
 
-### Automatic Import
+#### Automatic Import
 
 Mapeo has a built-in tile importer. Go to `File->Import Offline Map Tiles...` and
 point Mapeo to the tiles you want to use. It accepts a directory of tiles
 organized by `/{zoom}/{x}/{y}`. You can change these parameters
 when you launch Mapeo desktop in the background imagery layers menu. 
 
-![import.png](import.png)
+![import.png](../../img/import.png)
 
-## Background imagery layers menu
+### Background imagery layers menu
 
 In the Map Editor, press 'b' to open the imagery layers menu. Choose 'Custom'
 from the bottom list.  If you used automatic import, you can use the default
