@@ -1,7 +1,7 @@
 ---
 id: configuration
-title: Customizing Mapeo 
-sidebar_level: Customizing Icons & Forms
+title: Customizing Icons & Forms
+sidebar_label: Customizing Icons & Forms
 ---
 
 ## Creating a Mapeo Settings file

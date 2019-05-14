@@ -1,7 +1,7 @@
 ---
 id: intro
 title: What is Mapeo?
-sidebar_label: Intro to Mapeo
+sidebar_label: Introduction
 ---
 
 ## Create and edit maps together
