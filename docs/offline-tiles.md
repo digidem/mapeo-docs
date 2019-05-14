@@ -23,6 +23,13 @@ point Mapeo to the tiles you want to use. It accepts a directory of tiles
 organized by `/{zoom}/{x}/{y}`. You can change these parameters
 when you launch Mapeo desktop in the background imagery layers menu. 
 
+The automatic importer attempts to use `.jpg`, `.png`, and `.jpeg` as the
+format for each tile.
+
+It will accept `.asar` packages as well as directories. It does not currently
+support the `.mbtiles` format directly, [PRs
+welcome](https://github.com/digidem/mapeo-desktop/issues/103).
+
 ![import.png](../../img/import.png)
 
 ### Background imagery layers menu
@@ -36,8 +43,6 @@ Mapeo runs its own maptile server in the background. The server for tile data th
 ```
 http://localhost:5005/Offline-Maps/tiles/{zoom}/{x}/{y}
 ```
-
-It will try to use `.jpg`, `.png`, and `.jpeg`, or `.asar` packages. It does not currently support the `.mbtiles` format directly, [PRs welcome](https://github.com/digidem/mapeo-desktop/issues/103).
 
 ### Download the Tile Data
 
