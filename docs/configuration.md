@@ -17,7 +17,7 @@ Mapeo Desktop supports importing `.mapeosettings` files in the user interface.
 After you've created your settings file, you can import it by navigating to
 **File->Import Configuration file...**.
 
-[Import Configuration Mapeo Desktop](../../img/configuration-desktop.png)
+![Import Configuration Mapeo Desktop](../../img/configuration-desktop.png)
 
 ## Customizing Mapeo Mobile
 
