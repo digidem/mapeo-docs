@@ -6,7 +6,9 @@ sidebar_level: Customizing Mapeo
 
 ## Creating a Mapeo Settings file
 
-If you want to have a custom configuration for the tags and icons, see the [guide to creating a Mapeo Settings file](https://github.com/digidem/mapeo-settings-builder/blob/master/README.md#usage).
+If you want to have a custom configuration for the tags and icons, see the [guide to creating a Mapeo Settings file](https://github.com/digidem/mapeo-settings-builder/blob/master/README.md#table-of-contents).
+
+**If you would like to help improve this process, contributions are actively welcomed!**
 
 ## Customizing Mapeo Desktop
 

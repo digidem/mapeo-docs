@@ -3,11 +3,8 @@
 		"Getting Started": [
 			"intro",
 			"install",
-      "offline-tiles-desktop",
-      "offline-tiles-mobile",
-      "configuration",
-      "importing-desktop",
-      "exporting-desktop"
+      "offline-tiles",
+      "configuration"
 		],
 		"For Developers": [
 			"mapeo-ecosystem"
