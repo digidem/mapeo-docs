@@ -1,8 +1,17 @@
 ---
 id: install
-title: Installing Mapeo
-sidebar_label: Installation
+title: Installing Mapeo 
+sidebar_label: Install Mapeo
 ---
+
+## Install on Android (alpha)
+
+1. <a href="https://www.github.com/digidem/mapeo-mobile/releases" target="_blank">Download for Mobile</a>
+2. Navigate to the above page on your mobile device and click 'assets' under the most version.
+3. Download the `.apk` file onto your phone using the web browser.
+4. Open the `.apk` file in the the Downloads folder of your phone.
+
+![Download from Assets](../../img/mobile-github-asset.png)
 
 ## Install on PC
 
@@ -22,3 +31,12 @@ sidebar_label: Installation
 5. Click **Open**—this verification only happens the first time you use Mapeo
 
 ![Instructions for Mac](../../img/instructions.png)
+
+## Install on Linux
+
+
+1. <a href="https://www.github.com/digidem/mapeo-desktop/releases" target="_blank">Download for Linux</a>
+2. Pick the release that works for you. We recommend using the `.deb` package
+   for most systems.
+3. Double-click the `.deb` installer.
+
