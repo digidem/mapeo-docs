@@ -70,6 +70,9 @@ tiles/
   ...maybe more
 ```
 
+After moving files to the directory (if you aren't using automatic import), try
+manually refreshing Mapeo to see your new tiles.
+
 
 ### Download the Tile Data
 
