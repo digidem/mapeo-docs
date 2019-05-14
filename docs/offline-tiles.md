@@ -4,7 +4,12 @@ title: Using offline aerial imagery
 sidebar_label: Using offline aerial imagery
 ---
 
-# Using offline aerial imagery with Mapeo
+## Mapeo Mobile 
+
+For using offline aerial imagery with Mapeo Mobile, [please click here to see the
+documentation](https://github.com/digidem/mapeo-mobile#offline-maps).
+
+## Mapeo Desktop
 
 These instructions were written with
 [POSIX](https://en.wikipedia.org/wiki/POSIX) systems in mind (Linux, macOS).
