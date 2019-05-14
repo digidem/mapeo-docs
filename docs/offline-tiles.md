@@ -19,31 +19,17 @@ Windows users may have to infer some of the differences in the commands shown.
 
 Mapeo has a built-in tile importer. Go to `File->Import Offline Map Tiles...` and
 point Mapeo to the tiles you want to use. It accepts a directory of tiles
-organized by `/{zoom}/{x}/{y}`. You can change these parameters
-when you launch Mapeo desktop in the background imagery layers menu. 
+organized by `/{zoom}/{x}/{y}`. *You can change these parameters
+when you launch Mapeo desktop in the background imagery layers menu.*
 
 The automatic importer attempts to use `.jpg`, `.png`, and `.jpeg` as the
 format for each tile.
 
 It will accept `.asar` packages as well as `.tar` files. It does not currently
-support the `.mbtiles` format directly, [PRs
+support the `.mbtiles` format, [PRs
 welcome](https://github.com/digidem/mapeo-desktop/issues/103).
 
 ![import.png](../../img/import.png)
-
-### Background imagery layers menu
-
-Once you've imported your tiles, in the Map Editor, press 'b' to open the
-imagery layers menu. Choose 'Custom' from the bottom list.  If you used
-automatic import, you can use the default setting. You can modify the paramters
-based upon your setup.
-
-Mapeo runs its own maptile server in the background. The server for tile data that is imported from the `File->Import Offline Map Tiles...` should be:
-
-```
-http://localhost:5000/styles/default/tiles/{zoom}/{x}/{y}
-```
-
 
 ### Manual Import
 
@@ -72,6 +58,36 @@ tiles/
 
 After moving files to the directory (if you aren't using automatic import), try
 manually refreshing Mapeo to see your new tiles.
+
+### Map Editor 
+
+Once you've imported your tiles, in the Map Editor, you need to follow some
+more steps to get the OpenStreetMap iD editor to recognize your new tiles.
+
+1. Press 'b' to open the imagery layers menu. 
+2. Choose 'Custom' from the bottom of the list (you need to scroll quite a lot).  
+3. Input the appropirate URL (continue reading)
+
+![edit-custom-imagery.png](../../img/edit-custom-imagery.png)
+
+If you used a `tar` file, you can use the default setting: 
+
+```
+http://localhost:5000/styles/default/tiles/{zoom}/{x}/{y}
+```
+
+If you used an `.asar` file or used Manual Import, you need to specify the name
+of your asar file that contains the tiles you want to view:
+
+```
+http://localhost:5000/styles/default/tiles/my-offline-tiles/{zoom}/{x}/{y}
+```
+
+### Map Filter
+
+Map Filter requires a `style.json` file in the `default` directory 
+
+**TODO: document how to get this file, or perhaps we should generate one for the user!**
 
 
 ### Download the Tile Data
