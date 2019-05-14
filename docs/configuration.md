@@ -18,19 +18,38 @@ application that can extract tar files.
 
 *If you would like to help improve this process, contributions are actively welcomed!*
 
+## Mapeo Mobile
 
-## Customizing Mapeo Desktop
+Mapeo Mobile does not currently support a raw `.mapeosettings` file, and
+instead will need a manual import process using an extracted directory.
+
+1. Rename `myfile.mapeosettings` to `myfile.tar`
+2. Use a tar extraction program to untar the file. 
+3. Place this folder in the appropriate directory on the Android device using
+   `adb push`. [More information on adb](http://adbshell.com/commands/adb-push)
+
+[The instructions for which directory to place your settings folder can be found here on the GitHub
+repository](https://github.com/digidem/mapeo-mobile/blob/master/README.md#usage).
+
+## Mapeo Desktop
+
+#### Automated import 
 
 Mapeo Desktop supports importing `.mapeosettings` files in the user interface.
 
 After you've created your settings file, you can import it by navigating to
-**File->Import Configuration file...**.
+**File->Import Configuration...**.
 
 ![Import Configuration Mapeo Desktop](../../img/configuration-desktop.png)
 
-You can also extract the `.mapeosettings` file into the
-`USERDATA/Mapeo/presets/default` directory, similar to Mapeo Mobile described
-below.
+
+#### Manual import 
+
+You can also extract the `.mapeosettings` file as a tar file into the following directory:
+
+```
+USERDATA/Mapeo/presets/default
+```
 
 * USERDATA is the per-user application data directory, which by default points to:
 
@@ -38,16 +57,15 @@ below.
   * `$XDG_CONFIG_HOME` or ~/.config on Linux
   * `~/Library/Application Support` on macOS
 
-## Customizing Mapeo Mobile
+This folder (`default`) expects these files directly in under this default
+folder (i.e. no sub-folder with a different name):
 
-Mapeo Mobile does not currently support a raw `.mapeosettings` file, and
-instead will need an extracted directory.
+```
+presets.json
+icons.svg
+etc...
+```
 
+### Help wanted
 
-You need to use a tar extraction program to first untar the file. Then, place
-this folder in the appropriate directory on the Android device.
-
-[The instructions for which directory to place your settings folder can be found here on the GitHub
-repository](https://github.com/digidem/mapeo-mobile/blob/master/README.md#usage).
-
-
+* document more clearly or link to documentation on how to move folders into an android device

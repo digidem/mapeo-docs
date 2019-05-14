@@ -15,7 +15,6 @@ These instructions were written with
 [POSIX](https://en.wikipedia.org/wiki/POSIX) systems in mind (Linux, macOS).
 Windows users may have to infer some of the differences in the commands shown.
 
-
 #### Automatic Import
 
 Mapeo has a built-in tile importer. Go to `File->Import Offline Map Tiles...` and
@@ -26,22 +25,47 @@ when you launch Mapeo desktop in the background imagery layers menu.
 The automatic importer attempts to use `.jpg`, `.png`, and `.jpeg` as the
 format for each tile.
 
-It will accept `.asar` packages as well as directories. It does not currently
+It will accept `.asar` packages as well as `.tar` files. It does not currently
 support the `.mbtiles` format directly, [PRs
 welcome](https://github.com/digidem/mapeo-desktop/issues/103).
 
 ![import.png](../../img/import.png)
 
-### Background imagery layers menu
+#### Manual Import
+
+You can also put file into the following directory:
+
+```
+USERDATA/Mapeo/styles/default
+``` 
+
+* USERDATA is the per-user application data directory, which by default points to:
+
+  * `%APPDATA%` on Windows
+  * `$XDG_CONFIG_HOME` or ~/.config on Linux
+  * `~/Library/Application Support` on macOS
+
+
+Similar to Mapeo Mobile, this expects these files directly under this `default` folder:
+
+```
+style.json
+fonts/
+tiles/
+  my-offline-tiles.asar
+  ...maybe more
+```
+
+#### Background imagery layers menu
 
 In the Map Editor, press 'b' to open the imagery layers menu. Choose 'Custom'
 from the bottom list.  If you used automatic import, you can use the default
 setting. You can modify the paramters based upon your setup.
 
-Mapeo runs its own maptile server in the background. The server for tile data that is imported from the `File->Import Offline Map  Tiles...` should be:
+Mapeo runs its own maptile server in the background. The server for tile data that is imported from the `File->Import Offline Map Tiles...` should be:
 
 ```
-http://localhost:5005/Offline-Maps/tiles/{zoom}/{x}/{y}
+http://localhost:5005/styles/default/tiles/{zoom}/{x}/{y}
 ```
 
 ### Download the Tile Data
