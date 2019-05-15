@@ -31,7 +31,7 @@ function Help(props) {
       title: 'Join the community',
     },
     {
-      content: "Find out what's new with this project.",
+      content: "Find out what's new with this project on the [Digital Democracy blog](https://www.digital-democracy.org/blog/).",
       title: 'Stay up to date',
     },
   ];

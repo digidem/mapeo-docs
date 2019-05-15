@@ -41,7 +41,7 @@ class Footer extends React.Component {
               Get Started
             </a>
             <a href={this.docUrl('mapeo-ecosystem', this.props.language)}>
-              Mapeo Ecosystem
+              Open Source
             </a>
           </div>
           <div>
