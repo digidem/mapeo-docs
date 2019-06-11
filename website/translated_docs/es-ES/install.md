@@ -1,7 +1,7 @@
 ---
-id: install
-title: Installing Mapeo
-sidebar_label: Installation
+id: instalar
+title: Instalando Mapeo
+sidebar_label: Instalación
 ---
 
 ## Instalar en Android (beta)
@@ -11,7 +11,7 @@ sidebar_label: Installation
 3. Descargue el archivo `.apk` en su teléfono usando el navegador web.
 4. Abre el archivo `.apk` en la carpeta Descargas de tu teléfono.
 
-![Download from Assets](../../img/mobile-github-assets.png)
+![Descargar desde Activos](../../img/mobile-github-assets.png)
 
 ## Instalar en PC
 
@@ -22,12 +22,12 @@ sidebar_label: Installation
 
 ![Allow Access on Windows](../../img/allow-access.png)
 
-## Install on Mac
+## Instalar en Mac
 
-1. <a href="https://www.digital-democracy.org/mapeo/download_mac/" target="_blank">Download for Mac</a>
-2. Find the downloaded Mapeo Installer and double click
-3. Drag the Mapeo icon into your **Applications** folder
-4. Find Mapeo in your **Applications** folder and right click to open
+1. <a href="https://www.digital-democracy.org/mapeo/download_mac/" target="_blank">Descargar para Mac</a>
+2. Encuentra el instalador de Mapeo descargado y haz doble clic
+3. Arrastra el icono Mapeo en tu carpeta **Aplicaciones**
+4. Encuentra Mapeo en tu carpeta **Aplicaciones** y haz clic derecho para abrir
 5. Click **Open**—this verification only happens the first time you use Mapeo
 
 ![Instructions for Mac](../../img/instructions.png)
