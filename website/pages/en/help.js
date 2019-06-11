@@ -8,6 +8,7 @@
 const React = require('react');
 
 const CompLibrary = require('../../core/CompLibrary.js');
+const translate = require('../../server/translate.js').translate;
 
 const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
@@ -22,18 +23,18 @@ function Help(props) {
   const supportLinks = [
     {
       content: `Learn more using the [documentation on this site.](${docUrl(
-        'intro',
+        'intro'
       )})`,
-      title: 'Browse Docs',
+      title: <translate>Browse Docs</translate>
     },
     {
-      content: 'Ask questions about the documentation and project on [IRC.](http://webchat.freenode.net/?channels=ddem)',
-      title: 'Join the community',
+      content: <translate>Ask questions about the documentation and project on [IRC.](http://webchat.freenode.net/?channels=ddem)</translate>,
+      title: <translate>Join the community</translate>
     },
     {
-      content: "Find out what's new with this project on the [Digital Democracy blog](https://www.digital-democracy.org/blog/).",
-      title: 'Stay up to date',
-    },
+      content: <translate>Find out what's new with this project on the [Digital Democracy blog](https://www.digital-democracy.org/blog/).</translate>,
+      title: <translate>Stay up to date</translate>
+    }
   ];
 
   return (
@@ -43,7 +44,11 @@ function Help(props) {
           <header className="postHeader">
             <h1>Need help?</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
+          <p>
+            <translate desc="statement made to reader">
+              This project is maintained by a dedicated group of people.
+            </translate>
+          </p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>
