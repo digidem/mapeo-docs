@@ -31,5 +31,5 @@ Here is an overview of the Mapeo ecosystem, including various modules and utilit
 - [mapeo-settings](https://github.com/digidem/mapeo-settings): Settings for Mapeo
 - [iD-mapeo](https://github.com/digidem/iD-mapeo): offline editor for iD
 - [mapeo-schema](https://github.com/digidem/mapeo-schema): Data schemas for mapeo data types
-- [mapeo-styles](https://github.com/digidem/mapeo-styles): Default styles & tiles for mapeo backgrounds
-- [mapeo-openmaptiles](https://github.com/digidem/mapeo-openmaptiles): Lightweight map tiles for mapeo-mobile for global offline map
+- [mapeo-estilos](https://github.com/digidem/mapeo-styles): estilos por defecto & tiles para fondos mapeo
+- [mapeo-openmaptiles](https://github.com/digidem/mapeo-openmaptiles): Azulejos de mapa ligero para mapeo-móvil para mapa offline global
