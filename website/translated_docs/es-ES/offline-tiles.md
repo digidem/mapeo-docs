@@ -1,20 +1,20 @@
 ---
-id: offline-tiles
-title: Using offline aerial imagery
-sidebar_label: Using offline aerial imagery
+id: baldosas-offline
+title: Usando imágenes aéreas offline
+sidebar_label: Usando imágenes aéreas offline
 ---
 
-## Mapeo Mobile
+## Mapeo móvil
 
-For using offline aerial imagery with Mapeo Mobile, [please click here to see the documentation](https://github.com/digidem/mapeo-mobile#offline-maps).
+Para usar imágenes aéreas sin conexión con Mapeo Mobile, [por favor haz clic aquí para ver la documentación ](https://github.com/digidem/mapeo-mobile#offline-maps).
 
-## Mapeo Desktop
+## Escritorio Mapeo
 
-These instructions were written with [POSIX](https://en.wikipedia.org/wiki/POSIX) systems in mind (Linux, macOS). Windows users may have to infer some of the differences in the commands shown.
+Estas instrucciones fueron escritas con [POSIX](https://en.wikipedia.org/wiki/POSIX) sistemas en mente (Linux, macOS). Los usuarios de Windows pueden tener que inferir algunas de las diferencias en los comandos mostrados.
 
-### Automatic Import
+### Importar automáticamente
 
-Mapeo has a built-in tile importer. Go to `File->Import Offline Map Tiles...` and point Mapeo to the tiles you want to use. It accepts a directory of tiles organized by `/{zoom}/{x}/{y}`. *You can change these parameters when you launch Mapeo desktop in the background imagery layers menu.*
+Mapeo tiene un importador de azulejos integrado. Ir a `Archivo->Importar Mapas sin conexión...` y puntos Mapeo a las fichas que desea utilizar. It accepts a directory of tiles organized by `/{zoom}/{x}/{y}`. *You can change these parameters when you launch Mapeo desktop in the background imagery layers menu.*
 
 The automatic importer attempts to use `.jpg`, `.png`, and `.jpeg` as the format for each tile.
 
@@ -90,7 +90,7 @@ Let's store the template for a map tile provider for use by tile-dl:
     $ echo 'https://c.tiles.mapbox.com/v4/digitalglobe.0a8e44ba/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqOGRmNW9qZjBudmgzMnA1a294OGRtNm8ifQ.06mo-nDisy4KmqjYxEVwQw' > url_template
     
 
-On Windows
+En Windows
 
 ```cmd
 Set url_template="https://c.tiles.mapbox.com/v4/digitalglobe.0a8e44ba/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqOGRmNW9qZjBudmgzMnA1a294OGRtNm8ifQ.06mo-nDisy4KmqjYxEVwQw"
@@ -102,7 +102,7 @@ Now you can invoke the `tile-dl` program:
               --radius 0.1 --zoom 12 --output tiles/{z}/{x}/{y}.png
     
 
-On Windows
+En Windows
 
 ```cmd
 tile-dl -t %url_template% --lon=-122.2632601 --lat=37.8027446 --radius 0.1 --zoom 12 --output tiles/{z}/{x}/{y}.png
