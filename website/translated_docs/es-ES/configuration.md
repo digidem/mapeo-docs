@@ -14,7 +14,7 @@ A `.mapeosettings` file is a **tar** file, similar to a zip file. You can see th
 
 *If you would like to help improve this process, contributions are actively welcomed!*
 
-## Mapeo Mobile
+## Mapeo móvil
 
 Mapeo Mobile does not currently support a raw `.mapeosettings` file, and instead will need a manual import process using an extracted directory.
 
@@ -24,7 +24,7 @@ Mapeo Mobile does not currently support a raw `.mapeosettings` file, and instead
 
 [The instructions for which directory to place your settings folder can be found here on the GitHub repository](https://github.com/digidem/mapeo-mobile/blob/master/README.md#usage).
 
-## Mapeo Desktop
+## Escritorio Mapeo
 
 #### Automated import
 
