@@ -93,6 +93,12 @@ const siteConfig = {
   // Open Graph and Twitter card images.
   ogImage: 'img/mapeo_256x256.png',
   twitterImage: 'img/mapeo_256x256.png',
+  
+  // Algolia search integration
+  algolia: {
+    apiKey: 'b35cd69e0312590dcfdf17d8a8a0e478',
+    indexName: 'mapeo'
+  }
 
   // Show documentation's last contributor's name.
   // enableUpdateBy: true,
