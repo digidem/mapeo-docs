@@ -20,26 +20,28 @@ application that can extract tar files.
 
 *If you would like to help improve this process, contributions are actively welcomed!*
 
+## Testing presets
+
+Before loading your preset configuration file into the phone, use
+`mapeo-settings lint` to test your files to make sure they will compile on the
+phone.
+
+
+Run the following command if you are using the [default template](https://github.com/digidem/mapeo-default-settings).
+
+```
+npm test
+...
+Presets valid
+```
+
 ## Mapeo Mobile
 
-Mapeo Mobile does not currently support a raw `.mapeosettings` file, and
-instead will need a manual import process using an extracted directory.
+Now, you are ready to load your settings to Mapeo Mobile.
 
-1. Rename `myfile.mapeosettings` to `myfile.tar`
-
-```
-$ cp my-presets-v1.0.0.mapeosettings my-presets-v1.0.0.tar
-```
-
-2. Use a tar extraction program to untar the file. 
-
-```
-$ tar -xvf my-presets-v1.0.0.tar
-```
-
-3. Plug in the device to your computer using a USB cable.
-4. Set the mode for usb debugging on the phone to 'Transfer Files'.
-5. In the terminal, typing `adb devices` should give you the following output:
+1. Plug in the device to your computer using a USB cable.
+2. Set the mode for usb debugging on the phone to 'Transfer Files'.
+3. In the terminal, typing `adb devices` should give you the following output:
 
 ```
 $ adb devices
@@ -47,11 +49,23 @@ List of devices attached
 ZY223D4VVS	device
 ```
 
+4. Build presets with mapeo-settings-builder:
+
+```
+$ npm run build
+```
+
+5. Go to the build directory where your presets live...
+
+```
+$ cd build
+```
+
 [If your device is not found or is unauthorized, make sure it is plugged in all
 the way and then see this troubleshooting
 guide](https://stackoverflow.com/questions/23081263/adb-android-device-unauthorized).
 
-6. Now, you'll need to place this folder in the appropriate directory on the Android device using `adb push`:
+6. Now, you'll need to place the presets folder in the appropriate directory on the Android device using `adb push`:
 
 ```
 adb push ./my-presets-v1.0.0/* /sdcard/Android/data/com.mapeo/files/presets/default
