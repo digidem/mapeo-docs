@@ -10,7 +10,9 @@ versions.
 
 ## Creating a Mapeo Settings file
 
-If you want to have a custom configuration for the tags and icons, see the [guide to creating a Mapeo Settings file](https://github.com/digidem/mapeo-settings-builder/blob/master/README.md#table-of-contents).
+If you want to have a custom configuration for the tags and icons, see the
+[guide to creating a Mapeo Settings
+file](https://github.com/digidem/mapeo-settings-builder/blob/master/README.md#table-of-contents).
 
 A `.mapeosettings` file is a **tar** file, similar to a zip file. You can see
 the contents of the file by changing the file extention to `.tar` and using any
@@ -24,12 +26,51 @@ Mapeo Mobile does not currently support a raw `.mapeosettings` file, and
 instead will need a manual import process using an extracted directory.
 
 1. Rename `myfile.mapeosettings` to `myfile.tar`
-2. Use a tar extraction program to untar the file. 
-3. Place this folder in the appropriate directory on the Android device using
-   `adb push`. [More information on adb](http://adbshell.com/commands/adb-push)
 
-[The instructions for which directory to place your settings folder can be found here on the GitHub
-repository](https://github.com/digidem/mapeo-mobile/blob/master/README.md#usage).
+```
+$ cp my-presets-v1.0.0.mapeosettings my-presets-v1.0.0.tar
+```
+
+2. Use a tar extraction program to untar the file. 
+
+```
+$ tar -xvf my-presets-v1.0.0.tar
+```
+
+3. Plug in the device to your computer using a USB cable.
+4. Set the mode for usb debugging on the phone to 'Transfer Files'.
+5. In the terminal, typing `adb devices` should give you the following output:
+
+```
+$ adb devices
+List of devices attached
+ZY223D4VVS	device
+```
+
+[If your device is not found or is unauthorized, make sure it is plugged in all
+the way and then see this troubleshooting
+guide](https://stackoverflow.com/questions/23081263/adb-android-device-unauthorized).
+
+6. Now, you'll need to place this folder in the appropriate directory on the Android device using `adb push`:
+
+```
+adb push ./my-presets-v1.0.0/* /sdcard/Android/data/com.mapeo/files/presets/default
+```
+
+7. Check that the files are available on the device by using the shell:
+
+```
+$ adb shell ls /sdcard/Android/data/com.mapeo/files/presets/default
+VERSION
+icons
+icons.json
+icons.png
+icons.svg
+metadata.json
+presets.json
+style.css
+translations.json
+```
 
 ## Mapeo Desktop
 
