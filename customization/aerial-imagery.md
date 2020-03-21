@@ -1,6 +1,6 @@
 ---
 description: >-
-  For viewing imagery while offline or in remote environments with limited
+  Viewing map imagery while offline or in remote environments with limited
   connectivity.
 ---
 
