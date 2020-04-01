@@ -2,7 +2,7 @@
 
 #### What
 
-Create a custom `.mapeosettings` package to install in devices using MAPEO Desktop and Mobile
+Create a custom `.mapeosettings` package to install in devices using MAPEO Desktop and Mobile.
 
 #### Why
 
@@ -14,7 +14,7 @@ In anticipation of using your customized configurations of MAPEO, with enough ti
 
 #### Where
 
-Anywhere online and offline\*. \(\*installers required before building presets offline\)
+Anywhere online and offline\*. \(\*installers required before building presets offline\).
 
 #### Who
 
