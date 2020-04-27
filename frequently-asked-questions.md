@@ -13,9 +13,9 @@ Mapeo does not lock ****your data into a particular data format. You can easily 
 
 ## Does Mapeo use a Blockchain?
 
-No. Mapeo uses secure peer-to-peer technology. 
+Mapeo uses secure peer-to-peer technology with a distributed ledger, which does not include a public blockchain or consensus. 
 
-Blockchains are designed for a scenario where public transactions must be mediated between participants which are all potentially malicious. These “trustless” transactions are the key assumption of a blockchain that distinguishes it from peer-to-peer technology. 
+Public blockchains are designed for a scenario where public transactions must be mediated between participants which are all potentially malicious. These “trustless” transactions are the key assumption of a blockchain that distinguishes it from peer-to-peer technology. 
 
 Applications like Mapeo assume that data is managed by the community generating it -- and **some of that data may never be publicly accessible.** Mapeo's approach, in contrast, creates a closed group, where data creators are also data stewards, managing their own data and controlling who has access. We take security seriously and maintain protections from third-party attacks such as targeted hacks and surveillance by third-parties. For users of Mapeo, privacy is critical for protecting their ancestral knowledge and environmental monitoring information  until it’s ready to be shared with trusted partners. 
 
