@@ -4,9 +4,9 @@ description: An overview of the key components in the Mapeo core infrastructure.
 
 # Architecture Overview
 
-Behind the scenes of the user interfaces for working with mapping and monitoring data, you'll find Mapeo's core infrastructure. 
+Behind the scenes of the user interfaces for working with mapping and monitoring data, you'll find Mapeo's core infrastructure. This document is a work in progress and if you find anything missing or unclear, please feel free to submit a pull request!
 
-![](../.gitbook/assets/frame-1.png)
+![Architecture Diagram September, 2020](../.gitbook/assets/frame-1-3-.png)
 
 **Schema**
 
@@ -15,7 +15,7 @@ Behind the scenes of the user interfaces for working with mapping and monitoring
 3. **Preset.** Called a 'Category' in the Mapeo interface, but in code we call this a 'preset.' This type defines a set of Fields and an Icon.
 4. **Filter.** An expression that can be applied on the values in one or more Field across a set of observations. 
 
-**Database** 
+**Database**
 
 KappaDB is one of the fundamental primitives of Mapeo Core that handles indexing of data that isn't media \(i.e., it does not handle images\). KappaDB is a flexible database for peer-to-peer applications that we developed in 2018, and is considered stable. If you haven't yet, go ahead and [try the workshop](https://github.com/kappa-db/workshop) to familiarize yourself with how it works.
 
@@ -27,7 +27,7 @@ Each 'project' has a set of configuration files. It is identified by a project k
 
 **Discovery**
 
-Each device announces itself on the local network using MDNS. It announces itself using a hash of the project key, which is also called a _**discovery key**_**.** This means that 3rd-party observers will not be able to discern the project key. 
+Each device announces itself on the local network using MDNS. It announces itself using a hash of the project key, which is also called a _**discovery key**_**.** This means that 3rd-party observers will not be able to discern the project key.
 
 **Replication**
 
@@ -37,8 +37,7 @@ Replication requires advance knowledge of the project key. Replication will be r
 
 **Media**
 
-A project also contains media files which are handled separately from the multifeed module, which concerns itself primarily with structured data \(e.g., json, protobuf, etc\). Media files are replicated using [blob-store-replication-stream](https://npmjs.com/blob-store-replication-stream). This is a simple module that announces the list of files available on both sides of a duplex stream, and then replicates the files that are missing. 
+A project also contains media files which are handled separately from the multifeed module, which concerns itself primarily with structured data \(e.g., json, protobuf, etc\). Media files are replicated using [blob-store-replication-stream](https://npmjs.com/blob-store-replication-stream). This is a simple module that announces the list of files available on both sides of a duplex stream, and then replicates the files that are missing.
 
-Clients can provide filters for which files they want to accept on either end; by default, Mobile to Mobile sync does not send original images, only preview and thumbnail sizes. Original images are always syncronized from Mobile to Desktop. 
-
+Clients can provide filters for which files they want to accept on either end; by default, Mobile to Mobile sync does not send original images, only preview and thumbnail sizes. Original images are always syncronized from Mobile to Desktop.
 
