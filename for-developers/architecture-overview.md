@@ -6,6 +6,8 @@ description: An overview of the key components in the Mapeo core infrastructure.
 
 Behind the scenes of the user interfaces for working with mapping and monitoring data, you'll find Mapeo's core infrastructure. 
 
+![](../.gitbook/assets/frame-1.png)
+
 **Schema**
 
 1. **Observation.** Mapeo extends the OpenStreetMap specification to add 'Observations' -- a new data type that is like a node or point, but with extra metadata and media. 
@@ -39,5 +41,4 @@ A project also contains media files which are handled separately from the multif
 
 Clients can provide filters for which files they want to accept on either end; by default, Mobile to Mobile sync does not send original images, only preview and thumbnail sizes. Original images are always syncronized from Mobile to Desktop. 
 
-![](../.gitbook/assets/frame-1.png)
 
