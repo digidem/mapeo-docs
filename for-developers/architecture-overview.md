@@ -15,7 +15,7 @@ Behind the scenes of the user interfaces for working with mapping and monitoring
 
 **Database** 
 
-KappaDB is one of the fundamental primitives of Mapeo Core that handles indexing of data that isn't media \(i.e., it does not handle images\). KappaDB is a flexible database for peer-to-peer applications that we released in 2017, and is considered stable. If you haven't yet, go ahead and [try the workshop](https://github.com/kappa-db/workshop) to familiarize yourself with how it works.
+KappaDB is one of the fundamental primitives of Mapeo Core that handles indexing of data that isn't media \(i.e., it does not handle images\). KappaDB is a flexible database for peer-to-peer applications that we developed in 2018, and is considered stable. If you haven't yet, go ahead and [try the workshop](https://github.com/kappa-db/workshop) to familiarize yourself with how it works.
 
 **Configuration**
 
