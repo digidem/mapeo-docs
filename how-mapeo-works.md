@@ -30,6 +30,7 @@ The database is also written in JavaScript. We run the database in a separate pr
 
 ### **Offline maps**
 
-We use [mapbox-gl](https://github.com/mapbox/mapbox-gl-native) for displaying maps. It supports both raster \(e.g. satellite\) and vector tiles. Vector tiles are helpful because they take up less space online. We use [Mapbox Studio](https://www.mapbox.com/mapbox-studio/) for designing maps.  
+We use [mapbox-gl](https://github.com/mapbox/mapbox-gl-native) for displaying maps. It supports both raster \(e.g. satellite\) and vector tiles. Vector tiles are helpful because they take up less space online. We use [Mapbox Studio](https://www.mapbox.com/mapbox-studio/) for designing maps.
+
 We chose this approach because it gives us a lot of flexibility about styling maps, we can download map tiles and show maps offline, and the vector maps provide a really good user experience for zooming and moving the maps, even on slower devices.
 

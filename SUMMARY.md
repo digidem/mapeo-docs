@@ -2,6 +2,7 @@
 
 * [Introduction](README.md)
 * [Installation](installation.md)
+* [How Mapeo Works](how-mapeo-works.md)
 * [Frequently Asked Questions](frequently-asked-questions.md)
 * [Get Support](get-support.md)
 
@@ -15,6 +16,6 @@
 
 ## For Developers
 
-* [How Mapeo Works](for-developers/how-mapeo-works.md)
+* [Architecture Overview](for-developers/architecture-overview.md)
 * [Open Source](for-developers/mapeo-ecosystem.md)
 
