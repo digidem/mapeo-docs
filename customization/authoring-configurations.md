@@ -56,47 +56,6 @@ In the prests directory, each .json file needs:
 
 The `icons` folder should have all of the icons you created from the previous section
 
-### Adding an encryption key \(optional\)
-
-In the metadata.json file, you can include a `projectKey` which is a random cryptographic string of characters to prevent unwanted devices from getting access to the data.
-
-To create a projectKey, open node by typing this in the terminal
-
-```text
-node
-```
-
-You will see
-
-```text
-Welcome to Node.js 
-Type ".help" for more information.
->
-```
-
-Copy the following and paste it in this prompt
-
-```text
-crypto.randomBytes(32).toString('hex')
-```
-
-You'll see something like this \(but with x replaced with real characters and numbers\)
-
-```text
-'380c02d32xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1d'
-```
-
-Copy this string and add it to the `metadata.json` file so it looks like this:
-
-```text
-{
-  "dataset_id": "mapeo-jungle",
-  "projectKey": "380c02d32xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx1d"
-}
-```
-
-Notice that there are double quotes `"` around each value.
-
 ## Prepare Computer for Packaging the Categories
 
 _Time it takes: \(5-10 min\)_
@@ -150,7 +109,11 @@ npm run -s build
 
 This -s tells npm to be silent, so that you only see errors that are meaningful to you.
 
+If you're periodically updating the presets, make sure you're on the latest mapeo-settings-builder by using the following command
 
+```text
+npm install mapeo-settings-builder@latest
+```
 
 If you succeeded, you'll see the following output and a new folder called `build` with a `.mapeosettings` file inside of it.
 

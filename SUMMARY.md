@@ -11,6 +11,7 @@
 * [Preparing Mapeo Configuration](customization/preparing-mapeo-configuration.md)
 * [Preparing Icons](customization/preparing-icons.md)
 * [Authoring Configurations](customization/authoring-configurations.md)
+* [Adding a Project Key](customization/adding-a-project-key.md)
 * [Loading Configurations](customization/custom-settings.md)
 * [Aerial Imagery](customization/aerial-imagery.md)
 
