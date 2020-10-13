@@ -6,10 +6,25 @@ Mapeo is built with long-term sustainability as a focus. This goes beyond financ
 
 Mapeo does not lock ****your data into a particular data format. You can easily move your data around, and it's kept in it's original form. Mapeo can export data to [SMART](http://smartconservationtools.org/download/), Shapefile, CSV, and GeoJSON.  You'll never be locked into using Mapeo software.
 
+## I ran into an error. What do I do?
+
+If you see an error message in Mapeo, please open a bug report on GitHub, or contact us in our support channels.
+
+{% page-ref page="get-support.md" %}
+
 ## **I'm having trouble synchronizing my data!**
 
-1. Make sure your Mapeo applications are on the latest stable versions, [downloaded from the Mapeo website](https://mapeo.world/) and Google Play. 
-2. If you continue to have issues, [please let us know and get support from our technical team.](get-support.md)
+Make sure your Mapeo applications are on the latest stable versions, [downloaded from the Mapeo website](https://mapeo.world/) or Google Play. 
+
+Ensure that all devices are using the same configuration and project key. You can determine this by looking at the bottom of the syncronization screen in Desktop;
+
+![See that the configuration is the same on both Mobile and Desktop.](.gitbook/assets/configuration.png)
+
+And the Observations-&gt;Settings-&gt;Project Configuration screen on mobile.
+
+![](.gitbook/assets/screenshot_20201013-164919_mapeo.jpg)
+
+If you continue to have issues, [please let us know and get support from our technical team.](get-support.md)
 
 ## Does Mapeo use a Blockchain?
 
