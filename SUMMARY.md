@@ -6,11 +6,12 @@
 * [Frequently Asked Questions](frequently-asked-questions.md)
 * [Get Support](get-support.md)
 
-## Customization
+## Configuration <a id="customization"></a>
 
-* [Preparing Mapeo Configuration](customization/preparing-mapeo-configuration.md)
-* [Preparing Icons](customization/preparing-icons.md)
-* [Authoring Configurations](customization/authoring-configurations.md)
+* [Introduction](customization/preparing-mapeo-configuration.md)
+* [Preparing Computer](customization/preparing-computer.md)
+* [Designing Icons](customization/preparing-icons.md)
+* [Creating Fields](customization/authoring-configurations.md)
 * [Adding a Project Key](customization/adding-a-project-key.md)
 * [Loading Configurations](customization/custom-settings.md)
 * [Aerial Imagery](customization/aerial-imagery.md)

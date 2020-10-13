@@ -1,4 +1,4 @@
-# Authoring Configurations
+# Creating Fields
 
 ## Prepare folder structure for creating assets
 
@@ -56,37 +56,6 @@ In the prests directory, each .json file needs:
 
 The `icons` folder should have all of the icons you created from the previous section
 
-## Prepare Computer for Packaging the Categories
-
-_Time it takes: \(5-10 min\)_
-
-This is a one time process for every computer. We will need to iinstall nvm, npm, and homebrew. If you've already done this, skip this section.
-
-### Install nvm
-
-```text
-touch ~/.bash_profile
-
-curl -o- <https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh> | bash
-```
-
-Then close terminal and open again
-
-### Install homebrew \(macOS\)
-
-[http://brew.sh/](http://brew.sh/)
-
-### Install npm
-
-[https://docs.npmjs.com/cli/install](https://docs.npmjs.com/cli/install)
-
-### Install and use node 8
-
-```text
-nvm install 8
-nvm alias default 8
-```
-
 ## Package Config Assets for MAPEO
 
 ### Prep folder and build
@@ -100,7 +69,7 @@ cd /Users/jen/Documents/Dd_LOCAL_project-files/Dd-Tools/Mapeo/Presets/CREATION\\
 You will then be ready to run scripts directly in the folder. 
 
 ```text
-$ npm install
+npm install
 ```
 
 ```text
@@ -109,17 +78,10 @@ npm run -s build
 
 This -s tells npm to be silent, so that you only see errors that are meaningful to you.
 
-If you're periodically updating the presets, make sure you're on the latest mapeo-settings-builder by using the following command
+You will see something like the following output. Errors will be highlighted in RED with hopefully some helpful description so that you can remedy the issue.
 
 ```text
-npm install mapeo-settings-builder@latest
-```
-
-If you succeeded, you'll see the following output and a new folder called `build` with a `.mapeosettings` file inside of it.
-
-```text
-$ npm run -s build
-→ Using version 2.14.0 of mapeo-settings-builder
+→ Using version x.x.x. of mapeo-settings-builder
 ! Warning: no category json files found in /home/okdistribute/node_modules/mapeo-default-settings/mapeo-default-settings-2.1.0/categories
 ✓ Built presets and categories (37ms)
 ✓ Generated svg sprite for iD (544ms)
@@ -137,16 +99,27 @@ $ npm run -s build
 
 A `.mapeosettings` file is a **tar** file, similar to a zip file. You can see the contents of the file by changing the file extension to `.tar` and using any application that can extract tar files.
 
-### Troubleshooting
+### Troubleshooting Checklist
 
-If you already have done this and you are recreating presets from scratch, you may want to purge node\_modules and install updated versions of the dependencies
+Type the following into the terminal
 
-![To update to latest dependencies, delete this folder and reinstall](../.gitbook/assets/screen_shot_2019-05-07_at_11.01.07_am.png)
+```text
+node -v
+```
+
+You need to be at least on Node version 8 for the mapeo-settings-builder to work properly. If you need help, review the 'Preparing Computer' section and ensure you're on the latest version of mapeo-settings-builder.
+
+```text
+npm install -g mapeo-settings-builder@latest
+```
+
+You also may want to delete node\_modules and install updated versions of the dependencies.
+
+![To update to latest dependencies, delete this folder and type npm install](../.gitbook/assets/screen_shot_2019-05-07_at_11.01.07_am.png)
 
 In Mac or Linux, in the terminal:
 
 ```text
-rm -rf node_modules
 npm install
 ```
 

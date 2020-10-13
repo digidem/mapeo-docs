@@ -110,7 +110,7 @@ To find the latitude and longitude of the area, open Mapeo Desktop and navigate 
 Let's store the template for a map tile provider for use by tile-dl:
 
 ```text
-$ echo 'https://c.tiles.mapbox.com/v4/digitalglobe.0a8e44ba/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqOGRmNW9qZjBudmgzMnA1a294OGRtNm8ifQ.06mo-nDisy4KmqjYxEVwQw' > url_template
+echo 'https://c.tiles.mapbox.com/v4/digitalglobe.0a8e44ba/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqOGRmNW9qZjBudmgzMnA1a294OGRtNm8ifQ.06mo-nDisy4KmqjYxEVwQw' > url_template
 ```
 
 On Windows
@@ -122,7 +122,7 @@ Set url_template="https://c.tiles.mapbox.com/v4/digitalglobe.0a8e44ba/{z}/{x}/{y
 Now you can invoke the `tile-dl` program:
 
 ```text
-$ tile-dl -t "$(cat url_template)" --lon=-122.2632601 --lat=37.8027446 \
+tile-dl -t "$(cat url_template)" --lon=-122.2632601 --lat=37.8027446 \
           --radius 0.1 --zoom 12 --output tiles/{z}/{x}/{y}.png
 ```
 

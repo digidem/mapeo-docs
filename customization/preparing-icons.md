@@ -2,7 +2,7 @@
 description: 'Time it takes: (30 min - 30 days. Estimate: 30 min per category)'
 ---
 
-# Preparing Icons
+# Designing Icons
 
 ## What is an icon?
 

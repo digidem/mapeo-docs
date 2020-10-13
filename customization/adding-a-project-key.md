@@ -14,34 +14,12 @@ It can also only be 64 characters long -- no more, no less.
 
 To create a projectKey, first open the Terminal.
 
-### Using openssl
+### Using mapeo-settings-builder
 
 Copy and paste the following command into the terminal
 
 ```text
-openssl rand -hex 32
-```
-
-
-
-### Using Node.js
-
-```text
-node
-```
-
-You will see
-
-```text
-Welcome to Node.js 
-Type ".help" for more information.
->
-```
-
-Copy the following and paste it in this prompt
-
-```text
-crypto.randomBytes(32).toString('hex')
+mapeo-settings-builder generate-key
 ```
 
 You'll see something like this \(but with x replaced with real characters and numbers\)

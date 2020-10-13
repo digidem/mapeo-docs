@@ -1,4 +1,4 @@
-# Preparing Mapeo Configuration
+# Introduction
 
 #### What
 
