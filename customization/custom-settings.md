@@ -1,3 +1,7 @@
+---
+description: 'Time it takes: (10 min)'
+---
+
 # Loading Configurations
 
 ## What is a .mapeosettings file?

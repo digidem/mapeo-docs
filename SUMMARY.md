@@ -16,6 +16,10 @@
 * [Loading Configurations](customization/custom-settings.md)
 * [Aerial Imagery](customization/aerial-imagery.md)
 
+## Integration
+
+* [Exporting data to web](integration/exporting-data-to-web.md)
+
 ## For Developers
 
 * [Architecture Overview](for-developers/architecture-overview.md)

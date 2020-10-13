@@ -1,8 +1,10 @@
+---
+description: 'Time it takes: (20 min - 20 days. Estimate: 20 min per category)'
+---
+
 # Creating Fields
 
 ## Prepare folder structure for creating assets
-
-_Time it takes: \(5min\)_
 
 ### Using the file explorer
 
@@ -34,8 +36,6 @@ mv mapeo-default-settings-v2.1.0 mapeo-settings-myprojectname
 * style.css
 
 ## Prepare .json Files
-
-_Time it takes: \(20 min - 20 days. Estimate: 20 min per category\)_
 
 ### In `fields` directory customize the `.json` files 
 
