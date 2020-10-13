@@ -2,8 +2,6 @@
 
 ## Prepare Computer for Packaging the Categories
 
-_Time it takes: \(5-10 min\)_
-
 This is a one time process for every computer. We will need to iinstall nvm, npm, and homebrew. If you've already done this, skip this section.
 
 ### Install nvm
