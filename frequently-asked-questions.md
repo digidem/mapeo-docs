@@ -8,9 +8,9 @@ Mapeo does not lock ****your data into a particular data format. You can easily 
 
 ## I can't see my observations on the map
 
-If you are seeing a blank or biege screen, ensure that you are zoomed out. Use the Minus \(-\) sign on the top right hand corner of the map to zoom out as far as possible. When you've zoomed out to see the entire world, you'll be able to see your data.
+If you are seeing a blank or beige screen, ensure that you are zoomed out. Use the Minus \(-\) sign on the top right hand corner of the map to zoom out as far as possible. When you've zoomed out to see the entire world, you'll be able to see your data.
 
-To more quickly get access to your data, you can also use the Zoom to Data feature found in the application menubar, under View-&gt;Zoom to data.
+To more quickly get access to your data, you can also use the Zoom to Data feature found in the application menu bar, under View-&gt;Zoom to data.
 
 ![](.gitbook/assets/screen-shot-2020-10-07-at-3.49.23-pm.png)
 
