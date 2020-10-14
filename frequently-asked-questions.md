@@ -6,6 +6,22 @@ Mapeo is built with long-term sustainability as a focus. This goes beyond financ
 
 Mapeo does not lock ****your data into a particular data format. You can easily move your data around, and it's kept in it's original form. Mapeo can export data to [SMART](http://smartconservationtools.org/download/), Shapefile, CSV, and GeoJSON.  You'll never be locked into using Mapeo software.
 
+## I can't see my observations on the map
+
+If you are seeing a blank or biege screen, ensure that you are zoomed out. Use the Minus \(-\) sign on the top right hand corner of the map to zoom out as far as possible. When you've zoomed out to see the entire world, you'll be able to see your data.
+
+To more quickly get access to your data, you can also use the Zoom to Data feature found in the application menubar, under View-&gt;Zoom to data.
+
+![](.gitbook/assets/screen-shot-2020-10-07-at-3.49.23-pm.png)
+
+
+
+![Zoom out in the Observations view](.gitbook/assets/screenshot-from-2020-10-13-17-02-14.png)
+
+![Zoom out in the Territory view](.gitbook/assets/screenshot-from-2020-10-13-17-00-04.png)
+
+
+
 ## I ran into an error. What do I do?
 
 If you see an error message in Mapeo, please open a bug report on GitHub, or contact us in our support channels.
