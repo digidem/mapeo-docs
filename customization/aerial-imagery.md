@@ -24,7 +24,12 @@ tiles/
   ...maybe more
 ```
 
-**TODO: document how to create an asar file for tiles**
+**To Create an Asar file**
+
+```text
+npm install -g asar
+asar pack /path/to/my/tiles my-offline-tiles.asar
+```
 
 ## Mapeo Desktop
 
