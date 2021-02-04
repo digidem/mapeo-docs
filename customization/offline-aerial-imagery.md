@@ -6,6 +6,9 @@ description: >-
 
 # Offline Aerial Imagery
 
+Often partners are located in territories where there is limited or no connectivity.
+So it's a good idea to have an offline map of the territory ready to load
+into their mobile or desktop devices to be used with Mapeo.
 ## Mapeo Mobile
 
 ### Download the Tile Data
@@ -62,6 +65,56 @@ tiles/
 ```
 
 ## Mapeo Desktop
+### Download the Tile Data
+
+If you don't have tile data already, you can use a command line tool that we created to do this. First, make sure you have [npm](https://www.npmjs.com/get-npm) installed.
+
+Next, install [tile-dl](https://github.com/noffle/tile-dl):
+
+```text
+npm install --global tile-dl
+```
+
+`tile-dl` needs to be told the latitude, longitude, zoom level, and radius of the area to download locally.
+
+To find the latitude and longitude of the area, open Mapeo Desktop and navigate to the rough centre of the area you're interested in. In the bottom right hand corner of the screen you'll see two numbers separated by a comma. These are your current longitude and latitude \(in that order\). Note them.
+
+Let's store the template for a map tile provider for use by tile-dl:
+
+```text
+echo 'https://c.tiles.mapbox.com/v4/digitalglobe.0a8e44ba/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqOGRmNW9qZjBudmgzMnA1a294OGRtNm8ifQ.06mo-nDisy4KmqjYxEVwQw' > url_template
+```
+
+On Windows
+
+```text
+Set url_template="https://c.tiles.mapbox.com/v4/digitalglobe.0a8e44ba/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqOGRmNW9qZjBudmgzMnA1a294OGRtNm8ifQ.06mo-nDisy4KmqjYxEVwQw"
+```
+
+Now you can invoke the `tile-dl` program:
+
+```text
+tile-dl -t "$(cat url_template)" --lon=-122.2632601 --lat=37.8027446 \
+          --radius 0.1 --zoom 12 --output tiles/{z}/{x}/{y}.png
+```
+
+On Windows
+
+```text
+tile-dl -t %url_template% --lon=-122.2632601 --lat=37.8027446 --radius 0.1 --zoom 12 --output tiles/{z}/{x}/{y}.png
+```
+
+This example downloads the area around Oakland, California. You can tweak the parameters to meet your needs:
+
+* `lat`: The latitude at the centre of your download area.
+* `lon`: The longitude at the centre of your download area.
+* `radius`: The size of the area to download, in kilometres.
+* `zoom`: The zoom level to use. 9 is a very wide area; 11 is a large area; 13 is the size of a village; 16 is the size of a small road.
+
+The above zoom level figures are very rough. Experiment with small radii and see how the results look: you can open the resulting JPGs or PNGs with an image viewer and see if they look appropriate to your needs.
+
+Map tile providers offer these satellite images for free; please don't abuse their generosity by downloading more than what you need.
+
 
 ### Automatic Import
 
@@ -127,54 +180,3 @@ http://localhost:5000/styles/default/tiles/my-offline-tiles/{zoom}/{x}/{y}
 Map Filter requires a `style.json` file in the `default` directory
 
 **TODO: document how to get this file, or perhaps Mapeo should generate a default one for the user!**
-
-### Download the Tile Data
-
-If you don't have tile data already, you can use a command line tool that we created to do this. First, make sure you have [npm](https://www.npmjs.com/get-npm) installed.
-
-Next, install [tile-dl](https://github.com/noffle/tile-dl):
-
-```text
-npm install --global tile-dl
-```
-
-`tile-dl` needs to be told the latitude, longitude, zoom level, and radius of the area to download locally.
-
-To find the latitude and longitude of the area, open Mapeo Desktop and navigate to the rough centre of the area you're interested in. In the bottom right hand corner of the screen you'll see two numbers separated by a comma. These are your current longitude and latitude \(in that order\). Note them.
-
-Let's store the template for a map tile provider for use by tile-dl:
-
-```text
-echo 'https://c.tiles.mapbox.com/v4/digitalglobe.0a8e44ba/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqOGRmNW9qZjBudmgzMnA1a294OGRtNm8ifQ.06mo-nDisy4KmqjYxEVwQw' > url_template
-```
-
-On Windows
-
-```text
-Set url_template="https://c.tiles.mapbox.com/v4/digitalglobe.0a8e44ba/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZGlnaXRhbGdsb2JlIiwiYSI6ImNqOGRmNW9qZjBudmgzMnA1a294OGRtNm8ifQ.06mo-nDisy4KmqjYxEVwQw"
-```
-
-Now you can invoke the `tile-dl` program:
-
-```text
-tile-dl -t "$(cat url_template)" --lon=-122.2632601 --lat=37.8027446 \
-          --radius 0.1 --zoom 12 --output tiles/{z}/{x}/{y}.png
-```
-
-On Windows
-
-```text
-tile-dl -t %url_template% --lon=-122.2632601 --lat=37.8027446 --radius 0.1 --zoom 12 --output tiles/{z}/{x}/{y}.png
-```
-
-This example downloads the area around Oakland, California. You can tweak the parameters to meet your needs:
-
-* `lat`: The latitude at the centre of your download area.
-* `lon`: The longitude at the centre of your download area.
-* `radius`: The size of the area to download, in kilometres.
-* `zoom`: The zoom level to use. 9 is a very wide area; 11 is a large area; 13 is the size of a village; 16 is the size of a small road.
-
-The above zoom level figures are very rough. Experiment with small radii and see how the results look: you can open the resulting JPGs or PNGs with an image viewer and see if they look appropriate to your needs.
-
-Map tile providers offer these satellite images for free; please don't abuse their generosity by downloading more than what you need.
-
