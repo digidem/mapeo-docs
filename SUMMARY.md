@@ -11,10 +11,10 @@
 * [Introduction](customization/preparing-mapeo-configuration.md)
 * [Preparing Computer](customization/preparing-computer.md)
 * [Designing Icons](customization/preparing-icons.md)
-* [Creating Fields](customization/authoring-configurations.md)
+* [Custom configurations](customization/custom-configurations.md)
 * [Adding a Project Key](customization/adding-a-project-key.md)
-* [Loading Configurations](customization/custom-settings.md)
-* [Aerial Imagery](customization/aerial-imagery.md)
+* [Loading Configurations](customization/loading-configurations.md)
+* [Offline Aerial Imagery](customization/offline-aerial-imagery.md)
 
 ## Integration
 

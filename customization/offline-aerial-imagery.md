@@ -4,19 +4,56 @@ description: >-
   connectivity.
 ---
 
-# Aerial Imagery
+# Offline Aerial Imagery
 
 ## Mapeo Mobile
 
+### Download the Tile Data
+
+First find out the bouding box of the map area that will be downloaded using the [boundingbox online tool](https://boundingbox.klokantech.com). Use the `CSV` Copy & Paste option to display the coordinates in the correct format.
+
+Then install [mapbox-style-downloader](https://www.npmjs.com/package/mapbox-style-downloader):
+
+```sh
+npm i -g mapbox-style-downloader
+```
+
+Get a [Mapbox API token](https://account.mapbox.com/access-tokens/) and select a [Mapbox style](https://docs.mapbox.com/api/maps/styles/).
+
+Use `mapbox-style-downloader` to download styles, tiles, glyphs, and sprites for offline use:
+
+```sh
+mapbox-style download mapbox://styles/mapbox/streets-v9 \
+  --asar \
+  --token='MAPBOX_API_TOKEN' \
+  -o styledir \
+  -z 8 \
+  -Z 13 \
+  -b '-60.1364 1.5626 -58.0627 3.475'
+```
+
+Check that everything was downloaded correctly with `mapbox-style serve` inside the `styledir` directory.
+
+Connect phone to computer or move the files to a SD card or USB drive (an adapter will be needed).
+
 Offline maps must be placed in this folder:
 
-```text
+```txt
 /sdcard/Android/data/com.mapeo/files/styles/default
+```
+{% hint style="info" %}
+With different mapeo releases `com.mapeo` changes, ex.: `com.mapeo.debug`
+{% endhint %}
+
+From the computer `adb push` can be used. Make sure you have [adb](https://adbinstaller.com/) installed. Use like so:
+
+```sh
+adb push /path/to/styledir/* /sdcard/Android/data/com.mapeo/files/styles/default
 ```
 
 This folder should contain these files directly under this `default` folder:
 
-```text
+```txt
 style.json
 fonts/
 tiles/
@@ -24,18 +61,11 @@ tiles/
   ...maybe more
 ```
 
-**To Create an Asar file**
-
-```text
-npm install -g asar
-asar pack /path/to/my/tiles my-offline-tiles.asar
-```
-
 ## Mapeo Desktop
 
 ### Automatic Import
 
-Mapeo has a built-in tile importer. Go to `File->Import Offline Map Tiles...` and point Mapeo to the tiles you want to use. It accepts a directory of tiles organized by `/{zoom}/{x}/{y}`. _You can change these parameters when you launch Mapeo desktop in the background imagery layers menu._
+Mapeo has a built-in tile importer. Go to `File->Import Offline Map Tiles...` and point Mapeo to the tiles you want to use. It accepts a directory of tiles organized by `/{zoom}/{x}/{y}`. _You can change these parameters when you launch Mapeo Desktop in the background imagery layers menu._
 
 The automatic importer attempts to use `.jpg`, `.png`, and `.jpeg` as the format for each tile.
 
