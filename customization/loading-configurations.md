@@ -21,19 +21,16 @@ Presets valid
 ```
 
 ## Mapeo Mobile
-
-Now, you are ready to load your settings to Mapeo Mobile.
-
 ### Automated import
 
 Mapeo Mobile supports importing `.mapeosettings` files in the user interface.
 
 After you've created your settings file, you can import it by navigating to:
 
-**Observations-&gt;Configurations-&gt;Project configurations-&gt;Import Config**
+**Observations-&gt;Settings-&gt;Project configurations-&gt;Import Config**
 
 
-![](../.gitbook/assets/import-config.jpg)
+![Mapeo mobile import config screen](../.gitbook/assets/screenshot_20201013-164919_mapeo.jpg)
 
 
 ### Using manual file transfer
