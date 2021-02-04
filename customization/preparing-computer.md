@@ -6,11 +6,11 @@ This is a one time process for every computer. We will need to iinstall nvm, npm
 
 ### Install nvm
 
-```text
+```sh
 touch ~/.bash_profile
 ```
 
-```text
+```sh
 curl -o- <https://raw.githubusercontent.com/creationix/nvm/v0.32.1/install.sh> | bash
 ```
 
@@ -26,7 +26,7 @@ Then close terminal and open again
 
 ### Install and use node 12
 
-```text
+```sh
 nvm install 12
 nvm alias default 12
 ```
@@ -35,7 +35,7 @@ nvm alias default 12
 
 You'll see output on the terminal, but this is OK
 
-```text
+```sh
 npm install -g mapeo-settings-builder
 ```
 
@@ -43,13 +43,13 @@ npm install -g mapeo-settings-builder
 
 If your computer is ready to create configurations, type
 
-```text
+```sh
 mapeo-settings-builder
 ```
 
 You should see output that looks something like
 
-```text
+```sh
 → Using version x.x.x of mapeo-settings-builder
 Usage: mapeo-settings-builder [options] [command]
 
