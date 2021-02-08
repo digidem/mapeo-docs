@@ -71,7 +71,7 @@ You will then be ready to run scripts directly in the folder.
 
 If you installed `mapeo-settings-builder` on the first step you can simply run:
  ```sh
-mapeo-settings-builder build --output build/myprojectname.mapeosettings --lang 'pt'
+mapeo-settings-builder build --output myprojectname.mapeosettings --lang 'pt'
 ```
 
 After `--output` set the output file and after `--lang` set the language of the presets.
