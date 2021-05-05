@@ -21,7 +21,7 @@ If you are in place with no Internet connection, you can share the previously do
 
 ## Install on Mac
 
-1. [Download for Mac](https://www.digital-democracy.org/mapeo/download_mac/)
+1. [Download for Mac](https://www.digital-democracy.org/mapeo/latest/mac)
 2. Find the downloaded Mapeo Installer and double click
 3. Drag the Mapeo icon into your **Applications** folder
 4. Find Mapeo in your **Applications** folder and right click to open
