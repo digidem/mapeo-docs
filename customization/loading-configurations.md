@@ -4,7 +4,7 @@ description: 'Time it takes: (10 min)'
 
 # Loading Configurations
 
-## What is a .mapeosettings file?
+## What is a `.mapeosettings` file?
 
 A `.mapeosettings` file is a **tar** file, similar to a zip file. You can see the contents of the file by changing the file extension to `.tar` and using any application that can extract tar files.
 
@@ -21,8 +21,17 @@ Presets valid
 ```
 
 ## Mapeo Mobile
+### Automated import
 
-Now, you are ready to load your settings to Mapeo Mobile.
+Mapeo Mobile supports importing `.mapeosettings` files in the user interface.
+
+After you've created your settings file, you can import it by navigating to:
+
+**Observations-&gt;Settings-&gt;Project configurations-&gt;Import Config**
+
+
+![Mapeo mobile import config screen](../.gitbook/assets/screenshot_20201013-164919_mapeo.jpg)
+
 
 ### Using manual file transfer
 
@@ -43,6 +52,8 @@ Now, you are ready to load your settings to Mapeo Mobile.
    ```
 
 ### Using Terminal `adb`
+
+Make sure you have [adb](https://adbinstaller.com/) installed. Use like so:
 
 1. Plug in the device to your computer using a USB cable.
 2. Set the mode for USB debugging on the phone to 'Transfer Files'.

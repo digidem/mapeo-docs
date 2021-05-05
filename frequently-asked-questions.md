@@ -4,7 +4,7 @@
 
 Mapeo is built with long-term sustainability as a focus. This goes beyond financial sustainability -- we ensure that no single entity or technology is responsible for data storage or access. 
 
-Mapeo does not lock ****your data into a particular data format. You can easily move your data around, and it's kept in it's original form. Mapeo can export data to [SMART](http://smartconservationtools.org/download/), Shapefile, CSV, and GeoJSON.  You'll never be locked into using Mapeo software.
+Mapeo does not lock **your data** into a particular data format. You can easily move your data around, and it's kept in it's original form. Mapeo can export data to [SMART](http://smartconservationtools.org/download/), Shapefile, CSV, and GeoJSON.  You'll never be locked into using Mapeo software.
 
 ## I can't see my observations on the map
 

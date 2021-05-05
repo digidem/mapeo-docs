@@ -2,11 +2,11 @@
 
 ## What is a Project Key?
 
-In the metadata.json file in your Mapeo Configuration, you can include a `projectKey` which is a random cryptographic string of characters to prevent unwanted devices from getting access to the data.
+In the `metadata.json` file in your Mapeo Configuration, you can include a `projectKey` which is a random cryptographic string of characters to prevent unwanted devices from getting access to the data.
 
-If MM or MD has this inside the presets it has loaded, then it can only sync with another MM or MD that has the same project key. 
+If Mapeo Mobile or Mapeo Desktop has this inside the presets it has loaded, then it can only sync with another Mapeo Mobile or Mapeo Desktop that has the same project key.
 
-You can edit the project key. For example, if want to make first 4 characters identifiable to a project, but can only contain letters a-f and numbers 0-9. 
+You can edit the project key. For example, if want to make first 4 characters identifiable to a project, but can only contain letters a-f and numbers 0-9.
 
 It can also only be 64 characters long -- no more, no less. 
 
