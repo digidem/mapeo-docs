@@ -2,7 +2,11 @@
 
 ## Prepare Computer for Packaging the Categories
 
-This is a one time process for every computer. We will need to iinstall nvm, npm, and homebrew. If you've already done this, skip this section.
+Mapeo is built with JavaScript programming language. To get started, you'll need to install[ Node.js ](https://nodejs.org)development environment.. If you already have Node.js installed you can skip this section.
+
+You need to be at least on Node.js version 8 \(or higher\) for the mapeo-settings-builder to work properly. Head over to [Node.js download](https://nodejs.org/en/download/) page and select installer for your operating system.
+
+Alternatively you can also use NVM \(Node Version Manager\) to install and manage multiple versions of Node.js on your computer.
 
 ### Install nvm
 
