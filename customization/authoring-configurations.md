@@ -97,7 +97,7 @@ You will see something like the following output. Errors will be highlighted in 
 
 ### What is a .mapeosettings file?
 
-A `.mapeosettings` file is a **tar** file, similar to a zip file. You can see the contents of the file by changing the file extension to `.tar` and using any application that can extract tar files.
+A `.mapeosettings` file is a **tar** file, similar to a zip file. You can see the contents of the file by changing the file extension to `.tar` and using any application that can extract tar files (such as 7zip, mentioned above).
 
 ### Troubleshooting Checklist
 
