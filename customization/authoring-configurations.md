@@ -43,9 +43,9 @@ In the fields directory, each .json file needs a `key`, `type`, `label`, and `pl
 
 `type` can be one of `select_multiple`, `select_one`, `text`, or `textarea`
 
-### In the presets directory, customize the .json files
+### In the `presets` directory, customize the `.json` files
 
-In the prests directory, each .json file needs:
+In the presets directory, each .json file needs:
 
 * a list of `fields` which should match the `key` created in the fields directory.
 * `icon` must mach the name of an icon in the `icons` folder
